@@ -22,7 +22,7 @@ header {
     box-sizing: border-box;
     width: 100%;
     margin: 0px;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: #1C1C1C;
 }
 
@@ -32,15 +32,15 @@ header button {
     color: white;
     border: none;
     transition: all 0.5s ease;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 header button:hover {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 header button:active {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 header::after, header::before {
@@ -50,7 +50,7 @@ header::after, header::before {
     top: 0;
     height: 100%;
     width: 100%;
-    padding-bottom: 5px;
+    padding-bottom: 0.3125rem;
     z-index: -1;
     background-size: 400% 400%;
     animation: spin 3s linear infinite;
@@ -64,9 +64,9 @@ header::before {
 
 .card {
     position: relative;
-    width: 400px;
-    height: 400px;
-    border-radius: 10px;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 0.625rem;
     background-color: #1C1C1C;
     display: flex;
     flex-direction: column;
@@ -76,8 +76,8 @@ header::before {
 
 .card-wrapper {
     position: relative;
-    top: 100px;
-    margin: 40px;
+    top: 6.25rem;
+    margin: 2.5rem;
     transition: all 0.5s ease;
 }
 
@@ -100,9 +100,9 @@ header::before {
     left: 50%;
     translate: -50% -50%;
     background-image: conic-gradient(from var(--angle), transparent 70%, #00FF00);
-    padding: 10px;
+    padding: 0.625rem;
     z-index: -1;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     animation: spin linear 3s infinite;
     transition: transform 0.5s ease;
 }
@@ -121,7 +121,7 @@ header::before {
 }
 
 .cardLabel {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 #cards {
@@ -139,50 +139,50 @@ header::before {
 
 ul {
     align-self: flex-start;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: 1.25rem;
+    margin-left: 2.5rem;
 }
 
-li {
+.card li {
     list-style-type: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     position: relative;
     z-index: 1;
 }
 
-li::before {
+.card li::before {
     content: "";
     position: absolute;
-    left: -17px;
-    top: 14px;
+    left: -1.0625rem;
+    top: 0.875rem;
     background: conic-gradient(from var(--angle) ,#1E90FF, #00FA9A, #1E90FF);
-    width: 15px;
-    height: 15px;
-    border-radius: 50px;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    border-radius: 3.125rem;
     z-index: -1;
     translate: -50% -50%;
     animation: spin linear 3s infinite;
     filter: blur(1px);
 }
 
-li::after {
+.card li::after {
     content: "";
     position: absolute;
-    left: -17px;
-    top: 14px;
+    left: -1.0625rem;
+    top: 0.875rem;
     background: black;
-    width: 8px;
-    height: 8px;
-    border-radius: 50px;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 3.125rem;
     z-index: -1;
     translate: -50% -50%;
 }
 
 p {
-    margin: 30px;
-    margin-top: 20px;
+    margin: 1.875rem;
+    margin-top: 1.25rem;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 #lookingFor::before, #lookingFor::after {
@@ -190,3 +190,46 @@ p {
     background: conic-gradient(from var(--angle), #00FF00 0%, transparent 30%);
 }
 
+#contact-window {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    translate: 50% -50%;
+    right: 50%;
+    top: 50%;
+    width: 30rem;
+    height: 36rem;
+    background-color: transparent;
+    backdrop-filter: blur(1.875rem);
+    border: 0.1875rem solid white;
+    border-radius: 0.625rem;
+    z-index: 10;
+}
+
+#contact-me-title{
+    margin-top: 0.625rem;
+    text-align: center;
+}
+
+#contact-window li{
+    list-style-type: none;
+    margin-left: 1.875rem;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+#contact-window a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+#contact-window a::before{
+    content: "";
+    position: absolute;
+    bottom: -0.1875rem;
+    right: 0;
+    width: 100%;
+    height: 0.1rem;
+    background: linear-gradient(-45deg, #7B68EE, #00FF7F);
+}
