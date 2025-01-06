@@ -12,7 +12,9 @@ body::-webkit-scrollbar {
 }
 
 h1 {
+    font-size: min(2rem, 7vw);
     margin: 0px;
+    text-align: center;
 }
 
 header {
@@ -64,8 +66,8 @@ header::before {
 
 .card {
     position: relative;
-    width: max(300px, 25vw);
-    height: max(300px, 25vw);
+    width: max(18rem, 25vw);
+    height: max(18rem, 25vw);
     border-radius: 0.625rem;
     background-color: #1C1C1C;
     display: flex;
@@ -103,7 +105,7 @@ header::before {
     padding: 0.625rem;
     z-index: -1;
     border-radius: 0.625rem;
-    animation: spin linear 3s infinite;
+    animation: spin linear 5s infinite;
     transition: transform 0.5s ease;
 }
 
@@ -163,7 +165,7 @@ ul {
     border-radius: 3.125rem;
     z-index: -1;
     translate: -50% -50%;
-    animation: spin linear 3s infinite;
+    animation: spin linear 5s infinite;
     filter: blur(1px);
 }
 
