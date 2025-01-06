@@ -233,3 +233,17 @@ p {
     height: 0.1rem;
     background: linear-gradient(-45deg, #7B68EE, #00FF7F);
 }
+
+#contact-window p{
+    margin: 0;
+    margin-right: 0.7rem;
+    display: inline;
+    background: linear-gradient(-45deg, #00FF7F, #7B68EE);
+    color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+#contact-window .tdIcon {
+    text-align: center;
+}
