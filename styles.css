@@ -32,15 +32,15 @@ header button {
     color: white;
     border: none;
     transition: all 0.5s ease;
-    font-size: 1.125rem;
+    font-size: max(1.5vw, 2.5vh);
 }
 
 header button:hover {
-    font-size: 1.5rem;
+    font-size: max(2vw, 3vh);
 }
 
 header button:active {
-    font-size: 1.125rem;
+    font-size: max(1.5vw, 2.5vh);
 }
 
 header::after, header::before {
@@ -197,8 +197,8 @@ p {
     translate: 50% -50%;
     right: 50%;
     top: 50%;
-    width: 30rem;
-    height: 36rem;
+    width: 60vw;
+    height: 80vh;
     background-color: transparent;
     backdrop-filter: blur(1.875rem);
     border: 0.1875rem solid white;
