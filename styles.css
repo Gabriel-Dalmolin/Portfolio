@@ -32,15 +32,15 @@ header button {
     color: white;
     border: none;
     transition: all 0.5s ease;
-    font-size: max(1.5vw, 2.5vh);
+    font-size: max(1.5vw, 1.5vh);
 }
 
 header button:hover {
-    font-size: max(2vw, 3vh);
+    font-size: max(2vw, 2vh);
 }
 
 header button:active {
-    font-size: max(1.5vw, 2.5vh);
+    font-size: max(1.5vw, 1.5vh);
 }
 
 header::after, header::before {
@@ -64,20 +64,20 @@ header::before {
 
 .card {
     position: relative;
-    width: 25rem;
-    height: 25rem;
+    width: max(300px, 25vw);
+    height: max(300px, 25vw);
     border-radius: 0.625rem;
     background-color: #1C1C1C;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: all 0.5s ease;
+    margin: min(3rem, 5vw);
 }
 
 .card-wrapper {
     position: relative;
     top: 6.25rem;
-    margin: 2.5rem;
     transition: all 0.5s ease;
 }
 
@@ -126,8 +126,10 @@ header::before {
 
 #cards {
     display: flex; 
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 
 #myTechs::before, #myTechs::after {
@@ -179,10 +181,10 @@ ul {
 }
 
 p {
-    margin: 1.875rem;
+    margin: 10%;
     margin-top: 1.25rem;
     text-align: center;
-    font-size: 1.125rem;
+    font-size: 100%;
 }
 
 #lookingFor::before, #lookingFor::after {
@@ -197,13 +199,17 @@ p {
     translate: 50% -50%;
     right: 50%;
     top: 50%;
-    width: 60vw;
+    width: min(38rem, 80vw);
     height: 80vh;
     background-color: transparent;
     backdrop-filter: blur(1.875rem);
     border: 0.1875rem solid white;
-    border-radius: 0.625rem;
+    border-radius: 0.625rem;        
+    font-size: 100%;
     z-index: 10;
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
 }
 
 #contact-me-title{
@@ -211,12 +217,10 @@ p {
     text-align: center;
 }
 
-#contact-window li{
-    list-style-type: none;
-    margin-left: 1.875rem;
-    font-size: 1.2rem;
-    margin: 10px;
+#contact-window table{
+    margin-left: 1vw;
 }
+
 
 #contact-window a{
     position: relative;
