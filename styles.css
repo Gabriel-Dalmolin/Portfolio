@@ -63,9 +63,9 @@ header::before {
 
 
 .card {
+    position: relative;
     width: 400px;
     height: 400px;
-    position: relative;
     top: 100px;
     margin: 40px;
     border-radius: 10px;
@@ -73,6 +73,15 @@ header::before {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.5s ease;
+}
+
+.card-wrapper {
+    transition: all 0.5s ease;
+}
+
+.card-wrapper:hover {
+    transform: scale(1.2);
 }
 
 @property --angle{
@@ -94,6 +103,7 @@ header::before {
     z-index: -1;
     border-radius: 10px;
     animation: spin linear 3s infinite;
+    transition: transform 0.5s ease;
 }
 
 .card::before {
@@ -178,3 +188,4 @@ p {
     animation-direction: reverse;
     background: conic-gradient(from var(--angle), #00FF00 0%, transparent 30%);
 }
+
