@@ -105,7 +105,7 @@ header::before {
     padding: 0.625rem;
     z-index: -1;
     border-radius: 0.625rem;
-    animation: spin linear 5s infinite;
+    animation: spin linear 3s infinite;
     transition: transform 0.5s ease;
 }
 
@@ -159,13 +159,12 @@ ul {
     position: absolute;
     left: -1.0625rem;
     top: 0.875rem;
-    background: conic-gradient(from var(--angle) ,#1E90FF, #00FA9A, #1E90FF);
+    background: conic-gradient(#1E90FF, #00FA9A, #1E90FF);
     width: 0.9375rem;
     height: 0.9375rem;
     border-radius: 3.125rem;
     z-index: -1;
     translate: -50% -50%;
-    animation: spin linear 5s infinite;
     filter: blur(1px);
 }
 
@@ -210,8 +209,6 @@ p {
     font-size: 100%;
     z-index: 10;
     overflow: hidden;
-    text-wrap: nowrap;
-    text-overflow: ellipsis;
 }
 
 #contact-me-title{
@@ -225,9 +222,14 @@ p {
 
 
 #contact-window a{
+    max-width: 50vw;
     position: relative;
+    display: block;
     color: white;
     text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #contact-window a::before{
